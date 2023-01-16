@@ -1,0 +1,15 @@
+
+const mongoose=require("mongoose")
+
+
+const postSchema={
+title : String,
+body : String,
+device : String,
+userID:String
+
+}
+const Postmodel=mongoose.model("post",postSchema)
+module.exports={Postmodel}
+
+
